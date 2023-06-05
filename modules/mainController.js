@@ -1,5 +1,5 @@
 const mainController = {
-  release: '1.0.13',
+  release: '1.0.14',
 
   onViewCreated(){
     this.view.init = () => {
@@ -342,13 +342,15 @@ const mainController = {
   endGame(){
     const timerId = 'endGameTimer' + new Date().getTime();
     voltmx.timer.schedule(timerId, () => {
-      const record = voltmx.store.getItem('record') || 0;
+      const record = voltmx.store.getItem('record') || '0';
       let congrats = '';
-      if(this.score > record){
+      if(this.score > parseInt(record)){
         congrats = 'CONGRATULATIONS, you achieved a new record!!!\n';
+        voltmx.store.setItem('record', `${this.score}`);
       }
       voltmx.timer.cancel(timerId);
       voltmx.ui.Alert(`Game over.\nYour score is ${this.score}.\n${congrats}Do you want to play again?`, (value) => {
+        this.score = '0';
         value && this.startNewGame();
         value || (this.dnd.suspendEvents(true));
       }, constants.ALERT_TYPE_CONFIRMATION, 'Yes', 'No', 'Game over', {});
