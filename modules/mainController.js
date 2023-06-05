@@ -1,5 +1,5 @@
 const mainController = {
-  release: '1.0.12',
+  release: '1.0.13',
 
   onViewCreated(){
     this.view.init = () => {
@@ -62,7 +62,7 @@ const mainController = {
   endCallback(draggedObject){
     this.dnd.getSourceObject().isVisible = true;
   },
-  
+
   getCoordsInDropArea(dropArea, xInDragArea, yInDragArea){
     return {
       x: xInDragArea - dropArea.frame.x,
@@ -295,7 +295,8 @@ const mainController = {
         });
       });
 
-      voltmx.timer.schedule('empyFullAreaTimer', () =>{
+      const timerId = 'empyFullAreaTimer' + new Date().getTime();
+      voltmx.timer.schedule(timerId, () =>{
         fullAreas.forEach((area) => {
           area.forEach((boardCell) => {
             boardCell.active = false;
@@ -303,8 +304,9 @@ const mainController = {
           this.addScore(100);
         });
         this.setBoardBackground();
+        voltmx.timer.cancel(timerId);
         resolve();
-      }, 0.1);
+      }, 0.1, false);
     });
 
     return promise;
@@ -338,17 +340,18 @@ const mainController = {
   },
 
   endGame(){
-    voltmx.timer.schedule('endGameTimer', () => {
+    const timerId = 'endGameTimer' + new Date().getTime();
+    voltmx.timer.schedule(timerId, () => {
       const record = voltmx.store.getItem('record') || 0;
       let congrats = '';
       if(this.score > record){
         congrats = 'CONGRATULATIONS, you achieved a new record!!!\n';
       }
-
+      voltmx.timer.cancel(timerId);
       voltmx.ui.Alert(`Game over.\nYour score is ${this.score}.\n${congrats}Do you want to play again?`, (value) => {
         value && this.startNewGame();
         value || (this.dnd.suspendEvents(true));
       }, constants.ALERT_TYPE_CONFIRMATION, 'Yes', 'No', 'Game over', {});
-    }, 0.3);
+    }, 0.3, false);
   }  
 };

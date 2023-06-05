@@ -250,7 +250,7 @@
     "bgcolorkey": "255,255,255",
     "blockedChatMessages": "false",
     "bluetooth": "false",
-    "build": "release",
+    "build": "debug",
     "buildExclusion": {},
     "buildWarCompatability": "false",
     "build_gradle_attrs_prefix": "",
