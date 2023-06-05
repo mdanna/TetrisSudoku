@@ -350,7 +350,7 @@ const mainController = {
       }
       voltmx.timer.cancel(timerId);
       voltmx.ui.Alert(`Game over.\nYour score is ${this.score}.\n${congrats}Do you want to play again?`, (value) => {
-        this.score = '0';
+        this.score = 0;
         value && this.startNewGame();
         value || (this.dnd.suspendEvents(true));
       }, constants.ALERT_TYPE_CONFIRMATION, 'Yes', 'No', 'Game over', {});
