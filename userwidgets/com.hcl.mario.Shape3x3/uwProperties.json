@@ -1,0 +1,263 @@
+{
+    "classname": "Shape3x3",
+    "definitions": {
+        "apis": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "jbde858e1c5844e4a18d55478eb92e8d",
+                    "paramList": [],
+                    "propertyKey": "getDragClone",
+                    "pw": {
+                        "displayName": "getDragClone",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "dc82933d0204405793b9bfef28f6ac3f",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "fe50c19247a84266bc2a10c52bb39774",
+                    "paramList": [],
+                    "propertyKey": "getCoords",
+                    "pw": {
+                        "displayName": "getCoords",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "dc82933d0204405793b9bfef28f6ac3f",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "a55fd7bcf3f6406db62fbb55ce3e7267",
+                    "paramList": [],
+                    "propertyKey": "getAll",
+                    "pw": {
+                        "displayName": "getAll",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "dc82933d0204405793b9bfef28f6ac3f",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "i7e81afbde514685b75800386337ff5a",
+                    "paramList": [],
+                    "propertyKey": "setActive",
+                    "pw": {
+                        "displayName": "setActive",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "dc82933d0204405793b9bfef28f6ac3f",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "events": {
+            "custom": [],
+            "passthrough": []
+        },
+        "groups": {
+            "apis": [
+                "General"
+            ],
+            "events": [],
+            "properties": [
+                "General"
+            ],
+            "widgets": []
+        },
+        "properties": {
+            "custom": [
+                {
+                    "access": "Write",
+                    "defaultValue": "off",
+                    "group": "General",
+                    "kuid": "b8e1b3a13877435e8ac07e8811bae7c4",
+                    "originalPropertyKey": "active00",
+                    "propertyIndex": 1,
+                    "propertyKey": "active00",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "active00",
+                        "uiRepresentation": "Label-Combobox"
+                    },
+                    "srcWgtKUID": "dc82933d0204405793b9bfef28f6ac3f",
+                    "type": "list selector",
+                    "value": [
+                        "on",
+                        "off"
+                    ]
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "off",
+                    "group": "General",
+                    "kuid": "efdc6f0bd40b48b5873b7ee4ac25ebae",
+                    "originalPropertyKey": "active01",
+                    "propertyIndex": 2,
+                    "propertyKey": "active01",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "active01",
+                        "uiRepresentation": "Label-Combobox"
+                    },
+                    "srcWgtKUID": "dc82933d0204405793b9bfef28f6ac3f",
+                    "type": "list selector",
+                    "value": [
+                        "on",
+                        "off"
+                    ]
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "off",
+                    "group": "General",
+                    "kuid": "hf19fcd2f39a462fb4f0177d662be02f",
+                    "originalPropertyKey": "active02",
+                    "propertyIndex": 3,
+                    "propertyKey": "active02",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "active02",
+                        "uiRepresentation": "Label-Combobox"
+                    },
+                    "srcWgtKUID": "dc82933d0204405793b9bfef28f6ac3f",
+                    "type": "list selector",
+                    "value": [
+                        "on",
+                        "off"
+                    ]
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "off",
+                    "group": "General",
+                    "kuid": "ca86cb87a32d4c38b44c8003d143402f",
+                    "originalPropertyKey": "active10",
+                    "propertyIndex": 4,
+                    "propertyKey": "active10",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "active10",
+                        "uiRepresentation": "Label-Combobox"
+                    },
+                    "srcWgtKUID": "dc82933d0204405793b9bfef28f6ac3f",
+                    "type": "list selector",
+                    "value": [
+                        "on",
+                        "off"
+                    ]
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "off",
+                    "group": "General",
+                    "kuid": "b3dec42f69604a9ab5ebfe3b8168240d",
+                    "originalPropertyKey": "active11",
+                    "propertyIndex": 5,
+                    "propertyKey": "active11",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "active11",
+                        "uiRepresentation": "Label-Combobox"
+                    },
+                    "srcWgtKUID": "dc82933d0204405793b9bfef28f6ac3f",
+                    "type": "list selector",
+                    "value": [
+                        "on",
+                        "off"
+                    ]
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "off",
+                    "group": "General",
+                    "kuid": "b0db118670c147508c67195c2e6f93a1",
+                    "originalPropertyKey": "active12",
+                    "propertyIndex": 6,
+                    "propertyKey": "active12",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "active12",
+                        "uiRepresentation": "Label-Combobox"
+                    },
+                    "srcWgtKUID": "dc82933d0204405793b9bfef28f6ac3f",
+                    "type": "list selector",
+                    "value": [
+                        "on",
+                        "off"
+                    ]
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "off",
+                    "group": "General",
+                    "kuid": "fb2c3a9fb7c443beb1b6721912143eca",
+                    "originalPropertyKey": "active20",
+                    "propertyIndex": 7,
+                    "propertyKey": "active20",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "active20",
+                        "uiRepresentation": "Label-Combobox"
+                    },
+                    "srcWgtKUID": "dc82933d0204405793b9bfef28f6ac3f",
+                    "type": "list selector",
+                    "value": [
+                        "on",
+                        "off"
+                    ]
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "off",
+                    "group": "General",
+                    "kuid": "j7867ead7341402ca9cbcd16ab3b70d6",
+                    "originalPropertyKey": "active21",
+                    "propertyIndex": 8,
+                    "propertyKey": "active21",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "active21",
+                        "uiRepresentation": "Label-Combobox"
+                    },
+                    "srcWgtKUID": "dc82933d0204405793b9bfef28f6ac3f",
+                    "type": "list selector",
+                    "value": [
+                        "on",
+                        "off"
+                    ]
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "off",
+                    "group": "General",
+                    "kuid": "e1e07283140a44b59137aa3bcc8ba803",
+                    "originalPropertyKey": "active22",
+                    "propertyIndex": 9,
+                    "propertyKey": "active22",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "active22",
+                        "uiRepresentation": "Label-Combobox"
+                    },
+                    "srcWgtKUID": "dc82933d0204405793b9bfef28f6ac3f",
+                    "type": "list selector",
+                    "value": [
+                        "on",
+                        "off"
+                    ]
+                }
+            ],
+            "passthrough": []
+        },
+        "widgets": {
+            "expose": [],
+            "passthrough": []
+        }
+    },
+    "namespace": "com.hcl.mario",
+    "version": "1.0.0"
+}

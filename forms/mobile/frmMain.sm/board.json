@@ -1,0 +1,83 @@
+{
+    "DNDConfig": null,
+    "_height_": {
+        "type": "string",
+        "value": "316dp"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "100dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 6,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_skin_": "s0fdc032274b46f4934460e2b74b9da9",
+    "_top_": {
+        "type": "string",
+        "value": "36dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "316dp"
+    },
+    "allboxes": [],
+    "autogrowmode": 0,
+    "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50%"
+    },
+    "children": [
+        "horizontalDivider0",
+        "horizontalDivider1",
+        "horizontalDivider2",
+        "horizontalDivider3",
+        "horizontalDivider4",
+        "horizontalDivider5",
+        "horizontalDivider6",
+        "horizontalDivider7",
+        "horizontalDivider8",
+        "horizontalDivider9",
+        "verticalDivider0",
+        "verticalDivider1",
+        "verticalDivider2",
+        "verticalDivider3",
+        "verticalDivider4",
+        "verticaldivider5",
+        "verticalDivider6",
+        "verticalDivider7",
+        "verticalDivider8",
+        "verticalDivider9"
+    ],
+    "clipbounds": false,
+    "containerweight": 100,
+    "enablescrolling": true,
+    "id": "board",
+    "info": null,
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "e3a7102c784740eea09b80b24d3859eb",
+    "layouttype": 2,
+    "name": "kony.ui.FlexContainer",
+    "parent": "dragArea",
+    "pf": "frmMain",
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "retainflowhorizontalalignment": false,
+    "snapgridsize": 10,
+    "snaptogrid": true,
+    "wType": "FlexContainer",
+    "widgetalignment": 1,
+    "zindex": 1
+}

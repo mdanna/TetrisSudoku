@@ -1,0 +1,56 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizUserWidget",
+    "DNDConfig": null,
+    "_children_": [],
+    "_height_": {
+        "type": "string",
+        "value": "34dp"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "1dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 1,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_skin_": "s686766590a4487cb415ed877b9fce64",
+    "_top_": {
+        "type": "string",
+        "value": "1dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "34dp"
+    },
+    "canUpdateUI": true,
+    "containerweight": 0,
+    "data": {
+        "active": true
+    },
+    "id": "boardCell00",
+    "info": null,
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "defffe60b40b4bf58db0c77852d091c3",
+    "masterType": 1,
+    "name": "kony.ui.UserWidgetInstance",
+    "parent": "Shape1x1",
+    "pf": "userwidgetmodel",
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "retainflowhorizontalalignment": false,
+    "sourceUserWidget": "f0eacea620ae47a081bdc2111e028657",
+    "wType": "UserWidgetInstance",
+    "zindex": 1
+}

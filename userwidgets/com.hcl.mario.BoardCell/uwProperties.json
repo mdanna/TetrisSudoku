@@ -1,0 +1,120 @@
+{
+    "classname": "BoardCell",
+    "definitions": {
+        "apis": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "de6f3de8189e43b684c15cd9befc98a1",
+                    "paramList": [],
+                    "propertyKey": "enhance",
+                    "pw": {
+                        "displayName": "enhance",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "f0eacea620ae47a081bdc2111e028657",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "events": {
+            "custom": [],
+            "passthrough": []
+        },
+        "groups": {
+            "apis": [
+                "General"
+            ],
+            "events": [],
+            "properties": [],
+            "widgets": []
+        },
+        "properties": {
+            "custom": [
+                {
+                    "access": "Write",
+                    "defaultValue": false,
+                    "group": "General",
+                    "kuid": "i92fa004a5ce4b3298c11e29e38bd12e",
+                    "originalPropertyKey": "active",
+                    "propertyIndex": 3,
+                    "propertyKey": "active",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "active",
+                        "uiRepresentation": "Label-Radiobuttongroup"
+                    },
+                    "srcWgtKUID": "f0eacea620ae47a081bdc2111e028657",
+                    "type": "boolean",
+                    "value": "true/false"
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": 0,
+                    "group": "General",
+                    "kuid": "ie6cad1f87a344d7b9693d911178c70e",
+                    "originalPropertyKey": "x",
+                    "propertyIndex": 4,
+                    "propertyKey": "x",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "x",
+                        "type": "integer",
+                        "uiRepresentation": "Label-Textbox",
+                        "validationData": "^(\\+|-)?\\d+$"
+                    },
+                    "srcWgtKUID": "f0eacea620ae47a081bdc2111e028657",
+                    "type": "integer",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": 0,
+                    "group": "General",
+                    "kuid": "j5b71cea9f5a4c7bb2ec80d8c886932f",
+                    "originalPropertyKey": "y",
+                    "propertyIndex": 5,
+                    "propertyKey": "y",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "y",
+                        "type": "integer",
+                        "uiRepresentation": "Label-Textbox",
+                        "validationData": "^(\\+|-)?\\d+$"
+                    },
+                    "srcWgtKUID": "f0eacea620ae47a081bdc2111e028657",
+                    "type": "integer",
+                    "value": ""
+                }
+            ],
+            "passthrough": [
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "e4613ad9de024267a8e78de88889539e",
+                    "originalPropertyKey": "skin",
+                    "propertyIndex": 6,
+                    "propertyKey": "skinCell",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "skin",
+                        "dependencyConditions": {},
+                        "dependentKeysKUIDs": null,
+                        "displayName": "Normal",
+                        "isHiddenInTool": false,
+                        "srcWidget": "flxCell",
+                        "wType": "FlexContainer"
+                    },
+                    "srcWgtKUID": "d987a8a4c0c04f16b0133dc7489ba4b3"
+                }
+            ]
+        },
+        "widgets": {
+            "expose": [],
+            "passthrough": []
+        }
+    },
+    "namespace": "com.hcl.mario",
+    "version": "1.0.0"
+}

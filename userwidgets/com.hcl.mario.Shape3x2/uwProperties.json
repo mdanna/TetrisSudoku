@@ -1,0 +1,201 @@
+{
+    "classname": "Shape3x2",
+    "definitions": {
+        "apis": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "efed94fe2e094e8885b32cb1fa2b341e",
+                    "paramList": [],
+                    "propertyKey": "getDragClone",
+                    "pw": {
+                        "displayName": "getDragClone",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "aaea02f4331b44368807fb7ffe96fcd9",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "c9fc91eed5e14f2cbe76a09f47976dcd",
+                    "paramList": [],
+                    "propertyKey": "getCoords",
+                    "pw": {
+                        "displayName": "getCoords",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "aaea02f4331b44368807fb7ffe96fcd9",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "f494fdf5ca13411cafcc48367663a7b4",
+                    "paramList": [],
+                    "propertyKey": "getAll",
+                    "pw": {
+                        "displayName": "getAll",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "aaea02f4331b44368807fb7ffe96fcd9",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "b2008de20f9a4720af2d4c6cbaf13076",
+                    "paramList": [],
+                    "propertyKey": "setActive",
+                    "pw": {
+                        "displayName": "setActive",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "aaea02f4331b44368807fb7ffe96fcd9",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "events": {
+            "custom": [],
+            "passthrough": []
+        },
+        "groups": {
+            "apis": [
+                "General"
+            ],
+            "events": [],
+            "properties": [],
+            "widgets": []
+        },
+        "properties": {
+            "custom": [
+                {
+                    "access": "Write",
+                    "defaultValue": "off",
+                    "group": "General",
+                    "kuid": "a8d1ca4987fd4373b626de9c4e7793d5",
+                    "originalPropertyKey": "active00",
+                    "propertyIndex": 1,
+                    "propertyKey": "active00",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "active00",
+                        "uiRepresentation": "Label-Combobox"
+                    },
+                    "srcWgtKUID": "aaea02f4331b44368807fb7ffe96fcd9",
+                    "type": "list selector",
+                    "value": [
+                        "on",
+                        "off"
+                    ]
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "off",
+                    "group": "General",
+                    "kuid": "dd33ce4a46b34dc2b657114c0908b8cf",
+                    "originalPropertyKey": "active01",
+                    "propertyIndex": 2,
+                    "propertyKey": "active01",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "active01",
+                        "uiRepresentation": "Label-Combobox"
+                    },
+                    "srcWgtKUID": "aaea02f4331b44368807fb7ffe96fcd9",
+                    "type": "list selector",
+                    "value": [
+                        "on",
+                        "off"
+                    ]
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "off",
+                    "group": "General",
+                    "kuid": "ad6925a49e4343318aaec0f3bf9160f0",
+                    "originalPropertyKey": "active10",
+                    "propertyIndex": 4,
+                    "propertyKey": "active10",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "active10",
+                        "uiRepresentation": "Label-Combobox"
+                    },
+                    "srcWgtKUID": "aaea02f4331b44368807fb7ffe96fcd9",
+                    "type": "list selector",
+                    "value": [
+                        "on",
+                        "off"
+                    ]
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "off",
+                    "group": "General",
+                    "kuid": "a3081f73e0324faba32ca8a2e89a38fb",
+                    "originalPropertyKey": "active11",
+                    "propertyIndex": 5,
+                    "propertyKey": "active11",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "active11",
+                        "uiRepresentation": "Label-Combobox"
+                    },
+                    "srcWgtKUID": "aaea02f4331b44368807fb7ffe96fcd9",
+                    "type": "list selector",
+                    "value": [
+                        "on",
+                        "off"
+                    ]
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "off",
+                    "group": "General",
+                    "kuid": "gb502bc20df24c0bbb67fda88653e66c",
+                    "originalPropertyKey": "active20",
+                    "propertyIndex": 7,
+                    "propertyKey": "active20",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "active20",
+                        "uiRepresentation": "Label-Combobox"
+                    },
+                    "srcWgtKUID": "aaea02f4331b44368807fb7ffe96fcd9",
+                    "type": "list selector",
+                    "value": [
+                        "on",
+                        "off"
+                    ]
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "off",
+                    "group": "General",
+                    "kuid": "eb04863736af4eb9a789de1cb8265f24",
+                    "originalPropertyKey": "active21",
+                    "propertyIndex": 8,
+                    "propertyKey": "active21",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "active21",
+                        "uiRepresentation": "Label-Combobox"
+                    },
+                    "srcWgtKUID": "aaea02f4331b44368807fb7ffe96fcd9",
+                    "type": "list selector",
+                    "value": [
+                        "on",
+                        "off"
+                    ]
+                }
+            ],
+            "passthrough": []
+        },
+        "widgets": {
+            "expose": [],
+            "passthrough": []
+        }
+    },
+    "namespace": "com.hcl.mario",
+    "version": "1.0.0"
+}

@@ -1,0 +1,68 @@
+{
+    "DNDConfig": null,
+    "_height_": {
+        "type": "string",
+        "value": "106dp"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 6,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_skin_": "s0fdc032274b46f4934460e2b74b9da9",
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "106dp"
+    },
+    "allboxes": [],
+    "autogrowmode": 0,
+    "canUpdateUI": true,
+    "children": [
+        "boardCell00",
+        "boardCell01",
+        "boardCell02",
+        "boardCell10",
+        "boardCell11",
+        "boardCell12",
+        "boardCell20",
+        "boardCell21",
+        "boardCell22"
+    ],
+    "clipbounds": false,
+    "containerweight": 100,
+    "enablescrolling": true,
+    "id": "Shape3x3",
+    "info": null,
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "dc82933d0204405793b9bfef28f6ac3f",
+    "layouttype": 2,
+    "name": "kony.ui.FlexContainer",
+    "parent": "userwidgetmodel",
+    "pf": "userwidgetmodel",
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "retainflowhorizontalalignment": false,
+    "snapgridsize": 10,
+    "snaptogrid": true,
+    "wType": "FlexContainer",
+    "widgetalignment": 1,
+    "zindex": 1
+}

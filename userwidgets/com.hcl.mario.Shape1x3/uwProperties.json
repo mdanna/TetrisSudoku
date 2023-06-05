@@ -1,0 +1,129 @@
+{
+    "classname": "Shape1x3",
+    "definitions": {
+        "apis": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "b1586ecaf9e446f091d1a891ed66ff79",
+                    "paramList": [],
+                    "propertyKey": "getDragClone",
+                    "pw": {
+                        "displayName": "getDragClone",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "fdfe901f13c7463f953cee77e487aa89",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "a1cfa59e86ff4fff83c14d70932d69cb",
+                    "paramList": [],
+                    "propertyKey": "getCoords",
+                    "pw": {
+                        "displayName": "getCoords",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "fdfe901f13c7463f953cee77e487aa89",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "b74b9000797f4466999e39aa89e6565a",
+                    "paramList": [],
+                    "propertyKey": "setActive",
+                    "pw": {
+                        "displayName": "setActive",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "fdfe901f13c7463f953cee77e487aa89",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "events": {
+            "custom": [],
+            "passthrough": []
+        },
+        "groups": {
+            "apis": [
+                "General"
+            ],
+            "events": [],
+            "properties": [],
+            "widgets": []
+        },
+        "properties": {
+            "custom": [
+                {
+                    "access": "Write",
+                    "defaultValue": "off",
+                    "group": "General",
+                    "kuid": "i2ff5c91b1fb4d76a326a4d7a5bd4b0b",
+                    "originalPropertyKey": "active00",
+                    "propertyIndex": 1,
+                    "propertyKey": "active00",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "active00",
+                        "uiRepresentation": "Label-Combobox"
+                    },
+                    "srcWgtKUID": "fdfe901f13c7463f953cee77e487aa89",
+                    "type": "list selector",
+                    "value": [
+                        "on",
+                        "off"
+                    ]
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "off",
+                    "group": "General",
+                    "kuid": "h7bb27e3169945c48c48dda7aca1e87e",
+                    "originalPropertyKey": "active01",
+                    "propertyIndex": 2,
+                    "propertyKey": "active01",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "active01",
+                        "uiRepresentation": "Label-Combobox"
+                    },
+                    "srcWgtKUID": "fdfe901f13c7463f953cee77e487aa89",
+                    "type": "list selector",
+                    "value": [
+                        "on",
+                        "off"
+                    ]
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "off",
+                    "group": "General",
+                    "kuid": "dee41d6df9a44a158f639aceb9cf8570",
+                    "originalPropertyKey": "active02",
+                    "propertyIndex": 3,
+                    "propertyKey": "active02",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "active02",
+                        "uiRepresentation": "Label-Combobox"
+                    },
+                    "srcWgtKUID": "fdfe901f13c7463f953cee77e487aa89",
+                    "type": "list selector",
+                    "value": [
+                        "on",
+                        "off"
+                    ]
+                }
+            ],
+            "passthrough": []
+        },
+        "widgets": {
+            "expose": [],
+            "passthrough": []
+        }
+    },
+    "namespace": "com.hcl.mario",
+    "version": "1.0.0"
+}
