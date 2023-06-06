@@ -1,5 +1,5 @@
 const mainController = {
-  release: '1.0.14',
+  release: '1.0.15',
 
   onViewCreated(){
     this.view.init = () => {
@@ -49,6 +49,8 @@ const mainController = {
     };
 
     this.view.postShow = () => {
+      this.count = 0;
+      this.score = 0;
       this.draw();
       //this.display3x3();
     };
@@ -199,12 +201,12 @@ const mainController = {
 
     const deckWidth = widthShape1 + widthShape2 + widthShape3 + 20;
     this.view.deck.width = `${deckWidth}dp`;
-    //this.view.deck.left = `${Math.round((this.view.frame.width - deckWidth) / 2)}dp`;
     this.view.dragArea.forceLayout();
 
     this.dnd.makeDraggable(shape1, shape1.getDragClone());
     this.dnd.makeDraggable(shape2, shape2.getDragClone());
     this.dnd.makeDraggable(shape3, shape3.getDragClone());
+    voltmx.sdk.logsdk.info(`deck contains: ${this.view.deck.widgets().length}`);
     if(this.checkShapesInactive()){
       this.endGame();
     }
@@ -335,6 +337,8 @@ const mainController = {
       row.forEach((boardCell) => boardCell.active = false);
     }
     this.view.lblScore.text = 'Score: 0';
+    this.score = 0;
+    this.count = 0;
     this.setBoardBackground();
     this.draw();
   },
@@ -350,7 +354,6 @@ const mainController = {
       }
       voltmx.timer.cancel(timerId);
       voltmx.ui.Alert(`Game over.\nYour score is ${this.score}.\n${congrats}Do you want to play again?`, (value) => {
-        this.score = 0;
         value && this.startNewGame();
         value || (this.dnd.suspendEvents(true));
       }, constants.ALERT_TYPE_CONFIRMATION, 'Yes', 'No', 'Game over', {});
