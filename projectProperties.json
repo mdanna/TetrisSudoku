@@ -250,7 +250,7 @@
     "bgcolorkey": "255,255,255",
     "blockedChatMessages": "false",
     "bluetooth": "false",
-    "build": "debug",
+    "build": "release",
     "buildExclusion": {},
     "buildWarCompatability": "false",
     "build_gradle_attrs_prefix": "",
@@ -271,7 +271,7 @@
     },
     "createdVizVersion": "9.5.8",
     "createdgaversion": "9.5.8",
-    "currentgaversion": "9.5.9",
+    "currentgaversion": "9.5.10",
     "deeplinkkey": "None",
     "defaultZIndex": "1",
     "defaultlocalekey": "",
@@ -410,7 +410,7 @@
             "version": "1.0"
         }
     },
-    "konyVizVersion": "9.5.9",
+    "konyVizVersion": "9.5.10",
     "lastmodifiedtime": "1685713461804",
     "location": "false",
     "mangoapptitlekey": ",,,,,,",

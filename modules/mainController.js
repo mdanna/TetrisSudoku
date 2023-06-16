@@ -1,5 +1,5 @@
 const mainController = {
-  release: '1.0.15',
+  release: '1.0.16',
 
   onViewCreated(){
     this.view.init = () => {
