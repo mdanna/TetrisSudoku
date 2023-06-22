@@ -69,15 +69,19 @@ define({
   },
 
   setActive(draggedObject, x, y){
-    mainController.setActive.call(this, draggedObject, x, y)
+    mainController.setActive.call(this, draggedObject, x, y);
   },
 
   setEnhanced(draggedObject, x, y){
-    mainController.setEnhanced.call(this, draggedObject, x, y)
+    mainController.setEnhanced.call(this, draggedObject, x, y);
   },
 
   draw(){
     mainController.draw.call(this);
+  },
+  
+  testDraw(){
+    mainController.testDraw.call(this);
   },
 
   display3x3(){

@@ -6,34 +6,30 @@ define(function() {
     },
     initGettersSetters: function() {
       defineGetter(this, 'active00', () => {
-        return this._active00;
+        return 'on';
       });
       defineSetter(this, 'active00', value => {
-        this._active00 = 'on';
         this.view.boardCell00.isVisible = true;
         this.view.boardCell00.active = true;
       });
       defineGetter(this, 'active10', () => {
-        return this._active10;
+        return 'on';
       });
       defineSetter(this, 'active10', value => {
-        this._active10 = 'on';
         this.view.boardCell10.isVisible = true;
         this.view.boardCell10.active = true;
       });
       defineGetter(this, 'active20', () => {
-        return this._active20;
+        return 'on';
       });
       defineSetter(this, 'active20', value => {
-        this._active20 = 'on';
         this.view.boardCell20.isVisible = true;
         this.view.boardCell20.active = true;
       });
       defineGetter(this, 'active30', () => {
-        return this._active30;
+        return 'on';
       });
       defineSetter(this, 'active30', value => {
-        this._active30 = 'on';
         this.view.boardCell30.isVisible = true;
         this.view.boardCell30.active = true;
       });
@@ -53,7 +49,7 @@ define(function() {
     getCoords(){
       const coords = [];
       this.view.widgets().forEach((widget) => {
-        widget.className = 'com.hcl.mario.BoardCell' && widget.active && coords.push({
+        coords.push({
           x: widget.x,
           y: widget.y
         });

@@ -1,5 +1,6 @@
 const mainController = {
-  release: '1.0.16',
+  release: '1.0.17',
+  test: false,
 
   onViewCreated(){
     this.view.init = () => {
@@ -131,6 +132,17 @@ const mainController = {
     return this.view.board.widgets().find((widget) => widget.x === x && widget.y === y);
   },
 
+  mayFit(shape){
+    for(let i = 0; i < 9; i++){
+      for(let j = 0; j < 9; j++){
+        if(this.fits(shape, i, j)){
+          return true;
+        }
+      }
+    }
+    return false;
+  },
+
   fits(shape, x, y){
     const coords = shape.getCoords();
     for(let i = 0; i < coords.length; i++){
@@ -169,6 +181,10 @@ const mainController = {
   },
 
   draw(){
+    if(mainController.test){
+      this.testDraw();
+      return;
+    }
     const shape1x1 = new com.hcl.mario.Shape1x1({id: `shape1x1_${new Date().getTime()}`},{},{});
     const shape2x1 = new com.hcl.mario.Shape2x1({id: `shape2x1_${new Date().getTime()}`},{},{});
     const shape1x2 = new com.hcl.mario.Shape1x2({id: `shape1x2_${new Date().getTime()}`},{},{});
@@ -220,6 +236,25 @@ const mainController = {
       this.view.deck.add(shape);
       this.dnd.makeDraggable(shape, shape.getDragClone());
     });
+  },
+  
+  testDraw(){
+    this.view.deck.removeAll();
+    const shape2x2a = new com.hcl.mario.Shape2x2({id: `shape2x2_${new Date().getTime()}`},{},{});
+    const shape2x2b = new com.hcl.mario.Shape2x2({id: `shape2x2_${new Date().getTime()}`},{},{});
+    const shape2x2c = new com.hcl.mario.Shape2x2({id: `shape2x2_${new Date().getTime()}`},{},{});
+    shape2x2a.left = `${150}dp`;
+    this.view.deck.add(shape2x2a);
+    this.dnd.makeDraggable(shape2x2a, shape2x2a.getAll()[0].getDragClone());
+    shape2x2b.left = `${150 * 2}dp`;
+    this.view.deck.add(shape2x2b);
+    this.dnd.makeDraggable(shape2x2b, shape2x2b.getAll()[0].getDragClone());
+    shape2x2c.left = `${150 * 3}dp`;
+    this.view.deck.add(shape2x2c);
+    this.dnd.makeDraggable(shape2x2c, shape2x2c.getAll()[0].getDragClone());
+    if(this.checkShapesInactive()){
+      this.endGame();
+    }
   },
 
   checkShapesInactive(){
@@ -317,17 +352,6 @@ const mainController = {
   addScore(points){
     this.score += points || 0;
     this.view.lblScore.text = `Game score: ${this.score}`;
-  },
-
-  mayFit(shape){
-    for(let i = 0; i < 9; i++){
-      for(let j = 0; j < 9; j++){
-        if(this.fits(shape, i, j)){
-          return true;
-        }
-      }
-    }
-    return false;
   },
 
   startNewGame(){

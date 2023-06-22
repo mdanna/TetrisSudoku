@@ -70,7 +70,7 @@
             "custom": [
                 {
                     "access": "Write",
-                    "defaultValue": "off",
+                    "defaultValue": "on",
                     "group": "General",
                     "kuid": "a8d1ca4987fd4373b626de9c4e7793d5",
                     "originalPropertyKey": "active00",
@@ -90,7 +90,7 @@
                 },
                 {
                     "access": "Write",
-                    "defaultValue": "off",
+                    "defaultValue": "on",
                     "group": "General",
                     "kuid": "dd33ce4a46b34dc2b657114c0908b8cf",
                     "originalPropertyKey": "active01",
@@ -110,7 +110,7 @@
                 },
                 {
                     "access": "Write",
-                    "defaultValue": "off",
+                    "defaultValue": "on",
                     "group": "General",
                     "kuid": "ad6925a49e4343318aaec0f3bf9160f0",
                     "originalPropertyKey": "active10",
@@ -130,7 +130,7 @@
                 },
                 {
                     "access": "Write",
-                    "defaultValue": "off",
+                    "defaultValue": "on",
                     "group": "General",
                     "kuid": "a3081f73e0324faba32ca8a2e89a38fb",
                     "originalPropertyKey": "active11",
@@ -150,7 +150,7 @@
                 },
                 {
                     "access": "Write",
-                    "defaultValue": "off",
+                    "defaultValue": "on",
                     "group": "General",
                     "kuid": "gb502bc20df24c0bbb67fda88653e66c",
                     "originalPropertyKey": "active20",
@@ -170,7 +170,7 @@
                 },
                 {
                     "access": "Write",
-                    "defaultValue": "off",
+                    "defaultValue": "on",
                     "group": "General",
                     "kuid": "eb04863736af4eb9a789de1cb8265f24",
                     "originalPropertyKey": "active21",

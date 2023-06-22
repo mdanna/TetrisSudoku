@@ -70,7 +70,7 @@
             "custom": [
                 {
                     "access": "Write",
-                    "defaultValue": "off",
+                    "defaultValue": "on",
                     "group": "General",
                     "kuid": "dc277e20a77747179fe9906e7090ae59",
                     "originalPropertyKey": "active00",
@@ -90,7 +90,7 @@
                 },
                 {
                     "access": "Write",
-                    "defaultValue": "off",
+                    "defaultValue": "on",
                     "group": "General",
                     "kuid": "c6861e5a97fa435ca7189313a8112d34",
                     "originalPropertyKey": "active01",
@@ -110,7 +110,7 @@
                 },
                 {
                     "access": "Write",
-                    "defaultValue": "off",
+                    "defaultValue": "on",
                     "group": "General",
                     "kuid": "a7ae42b8724546359d61f53b7193892e",
                     "originalPropertyKey": "active10",
@@ -130,7 +130,7 @@
                 },
                 {
                     "access": "Write",
-                    "defaultValue": "off",
+                    "defaultValue": "on",
                     "group": "General",
                     "kuid": "h28765acfdbd4d45a1b59fa1c5eb2831",
                     "originalPropertyKey": "active11",

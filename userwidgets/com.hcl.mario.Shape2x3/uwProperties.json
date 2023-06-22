@@ -70,7 +70,7 @@
             "custom": [
                 {
                     "access": "Write",
-                    "defaultValue": "off",
+                    "defaultValue": "on",
                     "group": "General",
                     "kuid": "f3e5787cb2a440ccb93969c33f3d801a",
                     "originalPropertyKey": "active00",
@@ -90,7 +90,7 @@
                 },
                 {
                     "access": "Write",
-                    "defaultValue": "off",
+                    "defaultValue": "on",
                     "group": "General",
                     "kuid": "jc9dda8f82e649f39cc2730cdc747a59",
                     "originalPropertyKey": "active01",
@@ -110,7 +110,7 @@
                 },
                 {
                     "access": "Write",
-                    "defaultValue": "off",
+                    "defaultValue": "on",
                     "group": "General",
                     "kuid": "b53f5562c98e483ba301cb633872dbc2",
                     "originalPropertyKey": "active02",
@@ -130,7 +130,7 @@
                 },
                 {
                     "access": "Write",
-                    "defaultValue": "off",
+                    "defaultValue": "on",
                     "group": "General",
                     "kuid": "j714a80394984cc2a0f72f718fba378c",
                     "originalPropertyKey": "active10",
@@ -150,7 +150,7 @@
                 },
                 {
                     "access": "Write",
-                    "defaultValue": "off",
+                    "defaultValue": "on",
                     "group": "General",
                     "kuid": "he2939498c8d4e1f8f78aedbf4273e38",
                     "originalPropertyKey": "active11",
@@ -170,7 +170,7 @@
                 },
                 {
                     "access": "Write",
-                    "defaultValue": "off",
+                    "defaultValue": "on",
                     "group": "General",
                     "kuid": "i1fba88e88ea4b13aa803b5290578f48",
                     "originalPropertyKey": "active12",

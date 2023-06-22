@@ -58,7 +58,7 @@
             "custom": [
                 {
                     "access": "Write",
-                    "defaultValue": "off",
+                    "defaultValue": "on",
                     "group": "General",
                     "kuid": "hee78b90963f400db5761f4424c6dac8",
                     "originalPropertyKey": "active00",
@@ -78,7 +78,7 @@
                 },
                 {
                     "access": "Write",
-                    "defaultValue": "off",
+                    "defaultValue": "on",
                     "group": "General",
                     "kuid": "fd2bf6fe426a42118857398814c225df",
                     "originalPropertyKey": "active10",
@@ -98,7 +98,7 @@
                 },
                 {
                     "access": "Write",
-                    "defaultValue": "off",
+                    "defaultValue": "on",
                     "group": "General",
                     "kuid": "ic72c77525b8413dbd7a45f5e94b56a0",
                     "originalPropertyKey": "active20",

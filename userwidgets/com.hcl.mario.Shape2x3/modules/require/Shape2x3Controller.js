@@ -104,7 +104,7 @@ define(function() {
     getCoords(){
       const coords = [];
       this.view.widgets().forEach((widget) => {
-        widget.className = 'com.hcl.mario.BoardCell' && widget.active && coords.push({
+        widget.active && coords.push({
           x: widget.x,
           y: widget.y
         });

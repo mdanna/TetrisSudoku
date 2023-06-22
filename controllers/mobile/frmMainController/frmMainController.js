@@ -80,6 +80,10 @@ define({
     mainController.draw.call(this);
   },
 
+  testDraw(){
+    mainController.testDraw.call(this);
+  },
+
   display3x3(){
     mainController.display3x3.call(this);
   },
