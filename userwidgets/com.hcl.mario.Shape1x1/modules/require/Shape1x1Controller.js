@@ -36,6 +36,10 @@ define(function() {
 
     setActive(active){
       this.view.widgets().forEach((widget) => widget.skinCell = active ? 'skinCellActive' : 'skinCellInactive');
+    },
+    
+    debugView(context){
+      voltmx.print(`this.view is not null ${!!this.view} in ${context}`);
     }
 
   };

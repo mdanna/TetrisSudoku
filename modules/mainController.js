@@ -1,5 +1,5 @@
 const mainController = {
-  release: '1.0.17',
+  release: '1.0.19',
   test: false,
 
   onViewCreated(){
@@ -10,7 +10,7 @@ const mainController = {
           const top = `${this.CELL_SIZE * i + i + 1}dp`;
           const left = `${this.CELL_SIZE * j + j + 1}dp`;
           const boardCell = new com.hcl.mario.BoardCell({
-            id: `boardCell${i}_${j}_${new Date().getTime()}`,
+            id: `boardCell${i}${j}${new Date().getTime()}`,
             left,
             top
           }, {}, {});
@@ -58,11 +58,13 @@ const mainController = {
   },
 
   dragCallback(draggedObject){
+//    draggedObject.debugView('dragCallback');
     this.dnd.getSourceObject().isVisible = false;
     this.setBoardBackground();
   },
 
   endCallback(draggedObject){
+//    draggedObject.debugView('endCallback');
     this.dnd.getSourceObject().isVisible = true;
   },
 
@@ -74,6 +76,7 @@ const mainController = {
   },
 
   moveCallback(draggedObject, dropArea){
+//    draggedObject.debugView('moveCallback');
     const {x, y} = mainController.getCoordsInDropArea(dropArea, draggedObject.frame.x, draggedObject.frame.y);
     const leftIndex = this.getClosestIndex(x);
     const topIndex = this.getClosestIndex(y);
@@ -83,12 +86,14 @@ const mainController = {
   },
 
   dropCallback(draggedObject, dropArea){
+//    draggedObject.debugView('dropCallback');
     const {x, y} = mainController.getCoordsInDropArea(dropArea, draggedObject.frame.x, draggedObject.frame.y);
     const leftIndex = this.getClosestIndex(x);
     const topIndex = this.getClosestIndex(y);
 
     if(this.fits(draggedObject, topIndex, leftIndex)){
       this.setActive(draggedObject, topIndex, leftIndex);
+      draggedObject.parent.remove(draggedObject);
       this.dnd.getSourceObject().parent.remove(this.dnd.getSourceObject());
       this.emptyFullAreas().then(() => {
         if(this.checkShapesInactive()){
@@ -185,17 +190,17 @@ const mainController = {
       this.testDraw();
       return;
     }
-    const shape1x1 = new com.hcl.mario.Shape1x1({id: `shape1x1_${new Date().getTime()}`},{},{});
-    const shape2x1 = new com.hcl.mario.Shape2x1({id: `shape2x1_${new Date().getTime()}`},{},{});
-    const shape1x2 = new com.hcl.mario.Shape1x2({id: `shape1x2_${new Date().getTime()}`},{},{});
-    const shape2x2 = new com.hcl.mario.Shape2x2({id: `shape2x2_${new Date().getTime()}`},{},{});
-    const shape1x3 = new com.hcl.mario.Shape1x3({id: `shape1x3_${new Date().getTime()}`},{},{});
-    const shape3x1 = new com.hcl.mario.Shape3x1({id: `shape3x1_${new Date().getTime()}`},{},{});
-    const shape1x4 = new com.hcl.mario.Shape1x4({id: `shape1x4_${new Date().getTime()}`},{},{});
-    const shape4x1 = new com.hcl.mario.Shape4x1({id: `shape4x1_${new Date().getTime()}`},{},{});
-    const shape2x3 = new com.hcl.mario.Shape2x3({id: `shape2x3_${new Date().getTime()}`},{},{});
-    const shape3x2 = new com.hcl.mario.Shape3x2({id: `shape3x2_${new Date().getTime()}`},{},{});
-    const shape3x3 = new com.hcl.mario.Shape3x3({id: `shape3x3_${new Date().getTime()}`},{},{});
+    const shape1x1 = new com.hcl.mario.Shape1x1({id: `shape1x1${new Date().getTime()}`},{},{});
+    const shape2x1 = new com.hcl.mario.Shape2x1({id: `shape2x1${new Date().getTime()}`},{},{});
+    const shape1x2 = new com.hcl.mario.Shape1x2({id: `shape1x2${new Date().getTime()}`},{},{});
+    const shape2x2 = new com.hcl.mario.Shape2x2({id: `shape2x2${new Date().getTime()}`},{},{});
+    const shape1x3 = new com.hcl.mario.Shape1x3({id: `shape1x3${new Date().getTime()}`},{},{});
+    const shape3x1 = new com.hcl.mario.Shape3x1({id: `shape3x1${new Date().getTime()}`},{},{});
+    const shape1x4 = new com.hcl.mario.Shape1x4({id: `shape1x4${new Date().getTime()}`},{},{});
+    const shape4x1 = new com.hcl.mario.Shape4x1({id: `shape4x1${new Date().getTime()}`},{},{});
+    const shape2x3 = new com.hcl.mario.Shape2x3({id: `shape2x3${new Date().getTime()}`},{},{});
+    const shape3x2 = new com.hcl.mario.Shape3x2({id: `shape3x2${new Date().getTime()}`},{},{});
+    const shape3x3 = new com.hcl.mario.Shape3x3({id: `shape3x3${new Date().getTime()}`},{},{});
     const shapes = [
       shape1x1, shape2x1, shape1x2, shape3x1, shape1x3, shape4x1, shape1x4,  
       ...shape2x2.getAll(), ...shape2x3.getAll(), ...shape3x2.getAll(), ...shape3x3.getAll()
@@ -230,7 +235,7 @@ const mainController = {
 
   display3x3(){
     this.view.deck.removeAll();
-    const shape3x3 = new com.hcl.mario.Shape3x3({id: `shape3x3_${new Date().getTime()}`},{},{});
+    const shape3x3 = new com.hcl.mario.Shape3x3({id: `shape3x3${new Date().getTime()}`},{},{});
     shape3x3.getAll().forEach((shape, index) => {
       shape.left = `${150 * index}dp`;
       this.view.deck.add(shape);
@@ -240,9 +245,9 @@ const mainController = {
   
   testDraw(){
     this.view.deck.removeAll();
-    const shape2x2a = new com.hcl.mario.Shape2x2({id: `shape2x2_${new Date().getTime()}`},{},{});
-    const shape2x2b = new com.hcl.mario.Shape2x2({id: `shape2x2_${new Date().getTime()}`},{},{});
-    const shape2x2c = new com.hcl.mario.Shape2x2({id: `shape2x2_${new Date().getTime()}`},{},{});
+    const shape2x2a = new com.hcl.mario.Shape2x2({id: `shape2x2${new Date().getTime()}`},{},{});
+    const shape2x2b = new com.hcl.mario.Shape2x2({id: `shape2x2${new Date().getTime()}`},{},{});
+    const shape2x2c = new com.hcl.mario.Shape2x2({id: `shape2x2${new Date().getTime()}`},{},{});
     shape2x2a.left = `${150}dp`;
     this.view.deck.add(shape2x2a);
     this.dnd.makeDraggable(shape2x2a, shape2x2a.getAll()[0].getDragClone());

@@ -1,5 +1,5 @@
 /*
-DragAndDrop rel. 1.0.2
+DragAndDrop rel. 1.0.3
 
 The DragAndDrop class may be used to implement a drag and drop context inside a form.
 The DragAndDrop class deals with the following concepts:
@@ -151,14 +151,17 @@ class DragAndDrop{
           //           voltmx.sdk.logsdk.info(`onTouchStart: ${sourceObject.id}`);
           this._sourceObject = sourceObject;
           this._dragging = true;
+
+          draggedObject.left = `${this._xInDragArea(sourceObject, 0)}dp`;
+          draggedObject.top = `${this._yInDragArea(sourceObject, 0)}dp`;
+          draggedObject.width = `${sourceObject.frame.width}dp`;
+          draggedObject.height = `${sourceObject.frame.height}dp`;
+          draggedObject.onTouchStart = () => {};
+          draggedObject.isVisible && this._dragArea.add(draggedObject);
+          draggedObject.isVisible = true;
+          
           this._dragged = draggedObject;
 
-          this._dragged.left = `${this._xInDragArea(sourceObject, 0)}dp`;
-          this._dragged.top = `${this._yInDragArea(sourceObject, 0)}dp`;
-          this._dragged.width = `${sourceObject.frame.width}dp`;
-          this._dragged.height = `${sourceObject.frame.height}dp`;
-          this._dragged.onTouchStart = () => {};
-          this._dragArea.add(this._dragged);
         }
       }
     };
@@ -184,7 +187,6 @@ class DragAndDrop{
     dragArea.onTouchStart = (widget, x, y) => {
       if(!this._suspendEvents){
         if(this._dragging && this._dragged){
-          //           voltmx.sdk.logsdk.info(`onTouchStart: ${widget.id}`);
           this._startLeft = parseInt(this._dragged.left.replace(/dp/g, ''));
           this._startTop = parseInt(this._dragged.top.replace(/dp/g, ''));
           this._startX = Math.round(x);
@@ -236,18 +238,19 @@ class DragAndDrop{
                 this._dragged.left = `${this._startLeft + deltaX}dp`;
                 this._dragged.top = `${this._startTop + deltaY}dp`;
                 dropCallback(this._dragged, dropArea);
-                this._dragArea.remove(this._dragged);
+                this._dragged.isVisible = false;
                 found = true;
                 break;
               }
             }
           } catch(error) {
+            voltmx.print(`Error in dragArea.onTouchEnd ${JSON.stringify(error)}`);
             found = false;
           }
 
           if(!found){
             this._endCallback(this._dragged);
-            this._dragArea.remove(this._dragged);
+            this._dragged.isVisible = false;
           }
 
         }}

@@ -5,7 +5,7 @@
             "custom": [
                 {
                     "group": "General",
-                    "kuid": "bbf4efe45b5a4d3faff1afd3998144a9",
+                    "kuid": "dea156385d3842f98ce73cc5bc56bffb",
                     "paramList": [],
                     "propertyKey": "getDragClone",
                     "pw": {
@@ -17,7 +17,7 @@
                 },
                 {
                     "group": "General",
-                    "kuid": "b7c72206b4cc45abaa08e3fd9340f62e",
+                    "kuid": "cd871504a4e2443dac5288f8a78ec6c2",
                     "paramList": [],
                     "propertyKey": "getCoords",
                     "pw": {
@@ -29,11 +29,23 @@
                 },
                 {
                     "group": "General",
-                    "kuid": "b12c8ce398354384ad02b6244cb7d579",
+                    "kuid": "c57ca6082c9548f6a575f4efc3ee96ba",
                     "paramList": [],
                     "propertyKey": "setActive",
                     "pw": {
                         "displayName": "setActive",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "b60a00fff4c14c75a92898637e024ecb",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "c7906047065047239524d90729415cb1",
+                    "paramList": [],
+                    "propertyKey": "debugView",
+                    "pw": {
+                        "displayName": "debugView",
                         "uiRepresentation": "Label-Label-Button-Button"
                     },
                     "srcWgtKUID": "b60a00fff4c14c75a92898637e024ecb",
