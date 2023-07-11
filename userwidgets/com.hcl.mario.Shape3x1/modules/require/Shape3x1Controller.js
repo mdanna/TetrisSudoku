@@ -30,7 +30,7 @@ define(function() {
 
     getDragClone(){
       const shape = new com.hcl.mario.Shape3x1({
-        id: `shape3x1${new Date().getTime()}`
+        id: `shape3x1_${new Date().getTime()}`
       }, {}, {});
       shape.active00 = this.active00;
       shape.active10 = this.active10;
@@ -51,10 +51,6 @@ define(function() {
     
     setActive(active){
       this.view.widgets().forEach((widget) => widget.skinCell = active ? 'skinCellActive' : 'skinCellInactive');
-    },
-    
-    debugView(context){
-      voltmx.print(`this.view is not null ${!!this.view} in ${context}`);
     }
   };
 });

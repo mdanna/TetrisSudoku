@@ -5,7 +5,7 @@
             "custom": [
                 {
                     "group": "General",
-                    "kuid": "f71ddb4d85ef40cab99e547538433261",
+                    "kuid": "fa2b1462621045fda7c88036002f52b9",
                     "paramList": [],
                     "propertyKey": "getDragClone",
                     "pw": {
@@ -17,7 +17,7 @@
                 },
                 {
                     "group": "General",
-                    "kuid": "b04d053ec81244b0bbb0111a0d4e0a86",
+                    "kuid": "ca80206021284d6eaaafb52babdebe3c",
                     "paramList": [],
                     "propertyKey": "getCoords",
                     "pw": {
@@ -29,7 +29,7 @@
                 },
                 {
                     "group": "General",
-                    "kuid": "e847e7e8fa474bc49db76cf7be5ca18d",
+                    "kuid": "f6c6748a99d94858863f889c265c3130",
                     "paramList": [],
                     "propertyKey": "getAll",
                     "pw": {
@@ -41,23 +41,11 @@
                 },
                 {
                     "group": "General",
-                    "kuid": "b7f6ec7645544e61b30f4c81483153c8",
+                    "kuid": "a972d87ba81e4bc2aea93f5779f47534",
                     "paramList": [],
                     "propertyKey": "setActive",
                     "pw": {
                         "displayName": "setActive",
-                        "uiRepresentation": "Label-Label-Button-Button"
-                    },
-                    "srcWgtKUID": "f9206481fa8a405e95a409ceba2197b5",
-                    "type": "event"
-                },
-                {
-                    "group": "General",
-                    "kuid": "f3f335d1eb914902b4c973e4a789ecf6",
-                    "paramList": [],
-                    "propertyKey": "debugView",
-                    "pw": {
-                        "displayName": "debugView",
                         "uiRepresentation": "Label-Label-Button-Button"
                     },
                     "srcWgtKUID": "f9206481fa8a405e95a409ceba2197b5",

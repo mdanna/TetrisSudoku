@@ -57,7 +57,7 @@ define(function() {
 
     getDragClone(){
       const shape = new com.hcl.mario.Shape3x2({
-        id: `shape3x2${new Date().getTime()}`
+        id: `shape3x2_${new Date().getTime()}`
       }, {}, {});
       shape.active00 = this.active00;
       shape.active01 = this.active01;
@@ -85,7 +85,7 @@ define(function() {
       
       types.forEach((typeArray) => {
         const shape = new com.hcl.mario.Shape3x2({
-          id: `shape3x2${new Date().getTime()}`
+          id: `shape3x2_${new Date().getTime()}`
         }, {}, {});
         shape.active00 = typeArray.indexOf('00') > -1 ? 'on' : 'off';
         shape.active01 = typeArray.indexOf('01') > -1 ? 'on' : 'off';
@@ -111,10 +111,6 @@ define(function() {
     
     setActive(active){
       this.view.widgets().forEach((widget) => widget.skinCell = active ? 'skinCellActive' : 'skinCellInactive');
-    },
-    
-    debugView(context){
-      voltmx.print(`this.view is not null ${!!this.view} in ${context}`);
     }
   };
 });
