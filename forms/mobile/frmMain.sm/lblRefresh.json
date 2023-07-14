@@ -54,12 +54,11 @@
         }
     },
     "isvisible": true,
-    "kuid": "df5aebc291914a88b4fa5d4851f78e12",
+    "kuid": "jbef983c83924678a2ca8413bb6bd77c",
     "masterType": 1,
     "name": "kony.ui.Label",
-    "parent": "flxScore",
+    "parent": "flxRefresh",
     "pf": "frmMain",
-    "textstyle": {},
     "tooltip": "",
     "wType": "Label",
     "zindex": 1

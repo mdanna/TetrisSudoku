@@ -34,6 +34,6 @@ const splashController = {
         globals.offlineMode = true;
         new voltmx.mvc.Navigation('frmMain').navigate();
       }
-    }, 2);
+    }, 2, false);
   }
 };

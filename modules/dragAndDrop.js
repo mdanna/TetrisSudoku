@@ -1,5 +1,5 @@
 /*
-DragAndDrop rel. 1.0.3
+DragAndDrop rel. 1.0.4
 
 The DragAndDrop class may be used to implement a drag and drop context inside a form.
 The DragAndDrop class deals with the following concepts:
@@ -68,6 +68,7 @@ class DragAndDrop{
     this._dragCallback = null;
     this._endCallback = null;
     this._sourceObject = null;
+    this._draggedObjects = {};
   }
 
   /**
@@ -97,10 +98,18 @@ class DragAndDrop{
   }
 
   /**
-  * Return the reference to the source object, on which the drag and drop actions originated.
+  * Returns the reference to the source object, on which the drag and drop actions originated.
   */
   getSourceObject(){
     return this._sourceObject;
+  }
+  
+  /**
+  * Removes the source object
+  */
+  removeSourceObject(sourceObject){
+    delete this._draggedObjects[sourceObject.id];
+    sourceObject.parent.remove(sourceObject);
   }
 
   /**
@@ -133,7 +142,7 @@ class DragAndDrop{
     }
     return false;
   }
-
+  
   /**
   *
   * Defines a given object as the origin of a drag and drop action.
@@ -143,13 +152,14 @@ class DragAndDrop{
   * draggedObject: the reference to the object which is actually dragged. This is typically a clone of the source object.
   */
   makeDraggable(sourceObject, draggedObject){
+    this.setDraggedObject(sourceObject, draggedObject);
     sourceObject.onTouchStart = (widget, x, y) => {
       if(!this._suspendEvents){
         if(this.existsInArea(sourceObject, this._sourceAreas) || this.existsInArea(sourceObject, this._targetAreas)){
           //           voltmx.sdk.logsdk.info(`onTouchStart: ${sourceObject.id}`);
           this._sourceObject = sourceObject;
           this._dragging = true;
-          this._dragged = draggedObject;
+          this._dragged = this.getDraggedObject(sourceObject);
 
           this._dragged.left = `${this._xInDragArea(sourceObject, 0)}dp`;
           this._dragged.top = `${this._yInDragArea(sourceObject, 0)}dp`;
@@ -160,6 +170,20 @@ class DragAndDrop{
         }
       }
     };
+  }
+  
+  /**
+  * Sets the dragged object for the given source object.
+  */
+  setDraggedObject(sourceObject, draggedObject){
+    this._draggedObjects[sourceObject.id] = draggedObject;
+  }
+  
+  /**
+  * Returns the draggedObject for the given source object.
+  */
+  getDraggedObject(sourceObject){
+    return this._draggedObjects[sourceObject.id];
   }
 
   /**

@@ -39,9 +39,9 @@
         "value": "50%"
     },
     "children": [
+        "flxCup",
         "lblBestScore",
-        "lblRefresh",
-        "lblCup"
+        "flxRefresh"
     ],
     "clipbounds": false,
     "containerweight": 100,
@@ -50,7 +50,7 @@
     "info": null,
     "iscustomlayout": false,
     "isvisible": true,
-    "kuid": "f58e637d439e4260b80bc7d62d5b475b",
+    "kuid": "hd898f75d1ee40888b0c48ee9cec5871",
     "layouttype": 2,
     "name": "kony.ui.FlexContainer",
     "parent": "dragArea",

@@ -102,7 +102,9 @@ const mainController = {
   },
 
   endCallback(draggedObject){
-    this.dnd.getSourceObject().isVisible = true;
+    const sourceObject = this.dnd.getSourceObject();
+    sourceObject.isVisible = true;
+    this.dnd.setDraggedObject(sourceObject, sourceObject.getDragClone());
     draggedObject.parent.remove(draggedObject);
   },
 
@@ -126,10 +128,12 @@ const mainController = {
     const {x, y} = mainController.getCoordsInDropArea(dropArea, draggedObject.frame.x, draggedObject.frame.y);
     const leftIndex = this.getClosestIndex(x);
     const topIndex = this.getClosestIndex(y);
+    
+    const sourceObject = this.dnd.getSourceObject();
 
     if(this.fits(draggedObject, topIndex, leftIndex)){
       this.setActive(draggedObject, topIndex, leftIndex);
-      this.dnd.getSourceObject().parent.remove(this.dnd.getSourceObject());
+      this.dnd.removeSourceObject(sourceObject);
       this.emptyFullAreas().then(() => {
         if(this.checkShapesInactive()){
           this.endGame();
@@ -144,10 +148,10 @@ const mainController = {
         }
       });
     } else {
-      this.dnd.getSourceObject().isVisible = true;
+      this.dnd.setDraggedObject(sourceObject, sourceObject.getDragClone());
+      sourceObject.isVisible = true;
       this.setBoardBackground();
     }
-
     draggedObject.parent.remove(draggedObject);
   },
 
@@ -409,24 +413,6 @@ const mainController = {
     this.draw();
   },
 
-  endGameOld(){
-    const timerId = 'endGameTimer' + new Date().getTime();
-    voltmx.timer.schedule(timerId, () => {
-      const record = voltmx.store.getItem('record') || '0';
-      let congrats = '';
-      if(this.score > parseInt(record)){
-        congrats = 'CONGRATULATIONS, you achieved a new record!!!\n';
-        voltmx.store.setItem('record', `${this.score}`);
-        this.view.lblBestScore.text = `Your best score: ${this.score}`;
-      }
-      voltmx.timer.cancel(timerId);
-      voltmx.ui.Alert(`Game over.\nYour score is ${this.score}.\n${congrats}Do you want to play again?`, (value) => {
-        value && this.startNewGame();
-        value || (this.dnd.suspendEvents(true));
-      }, constants.ALERT_TYPE_CONFIRMATION, 'Yes', 'No', 'Game over', {});
-    }, 0.3, false);
-  },
-  
   endGame(){
     const timerId = 'endGameTimer' + new Date().getTime();
     voltmx.timer.schedule(timerId, () => {
