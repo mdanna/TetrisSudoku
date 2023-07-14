@@ -41,6 +41,7 @@
     "children": [
         "flxScore",
         "board",
+        "flxGameScore",
         "deck",
         "flxFooter"
     ],

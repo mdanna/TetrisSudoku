@@ -22,7 +22,7 @@
         "value": "0"
     },
     "_skin_": "s5fb605ead3143acbea1e533a3c3de0a",
-    "_text_": "",
+    "_text_": "1",
     "_top_": {
         "type": "string",
         "value": "0dp"
@@ -57,7 +57,7 @@
     "kuid": "df2055c4e0d44364bb260de8e188ecee",
     "masterType": 1,
     "name": "kony.ui.Label",
-    "parent": "flxScore",
+    "parent": "flxRefresh",
     "pf": "frmMain",
     "tooltip": "",
     "wType": "Label",

@@ -1,1 +1,29 @@
-{}
+{
+    "color1": {
+        "color": {
+            "value": "d9fcf5ff"
+        },
+        "colorType": {
+            "value": "one"
+        },
+        "type": "color"
+    },
+    "color2": {
+        "color": {
+            "value": "eed9fcff"
+        },
+        "colorType": {
+            "value": "one"
+        },
+        "type": "color"
+    },
+    "colorText": {
+        "color": {
+            "value": "3b003bff"
+        },
+        "colorType": {
+            "value": "one"
+        },
+        "type": "color"
+    }
+}

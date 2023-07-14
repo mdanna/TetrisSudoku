@@ -1,5 +1,5 @@
 /*
-DragAndDrop rel. 1.0.2
+DragAndDrop rel. 1.0.3
 
 The DragAndDrop class may be used to implement a drag and drop context inside a form.
 The DragAndDrop class deals with the following concepts:
@@ -21,13 +21,11 @@ or a direct child of a Target Area.
 
 - the dragCallback is a callback fired when the object is dragged outside the boundaries of any Drop Area
 
-- the endCallback is a callback fired when the object is dropped outside the boundaries of any Drop Area. After calling
-this callback the lifecycle of the dragged object ends and the draggedObject is deleted fro the drag area.
+- the endCallback is a callback fired when the object is dropped outside the boundaries of any Drop Area.
 
-- the moveCallback is a callback fired when the object is dragged within the boundaries of a Drop Area
+- the moveCallback is a callback fired when the object is dragged within the boundaries of a Drop Area.
 
-- the dropCallback is a callback fired when the object is dropped within the boundaries of a Drop Area. After calling
-this callback the lifecycle of the dragged object ends and the draggedObject is deleted fro the drag area.
+- the dropCallback is a callback fired when the object is dropped within the boundaries of a Drop Area.
 
 WARNING: To use this class you MUST check the box Ënable JS Library mode" in Project Settings.
 
@@ -236,7 +234,6 @@ class DragAndDrop{
                 this._dragged.left = `${this._startLeft + deltaX}dp`;
                 this._dragged.top = `${this._startTop + deltaY}dp`;
                 dropCallback(this._dragged, dropArea);
-                this._dragArea.remove(this._dragged);
                 found = true;
                 break;
               }
@@ -247,7 +244,6 @@ class DragAndDrop{
 
           if(!found){
             this._endCallback(this._dragged);
-            this._dragArea.remove(this._dragged);
           }
 
         }}

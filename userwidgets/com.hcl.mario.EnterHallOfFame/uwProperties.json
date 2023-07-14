@@ -1,0 +1,58 @@
+{
+    "classname": "EnterHallOfFame",
+    "definitions": {
+        "apis": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "ia54018002d84adfacaa9bf0829a7c0d",
+                    "paramList": [],
+                    "propertyKey": "show",
+                    "pw": {
+                        "displayName": "show",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "gd1ccf43f3e741958fec330c1bc6fad6",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "events": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "cea5e12ad4344f6da71d8ad579fe6b27",
+                    "paramList": [],
+                    "propertyIndex": 1,
+                    "propertyKey": "onRegister",
+                    "pw": {
+                        "displayName": "onRegister",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "gd1ccf43f3e741958fec330c1bc6fad6",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "groups": {
+            "apis": [
+                "General"
+            ],
+            "events": [],
+            "properties": [],
+            "widgets": []
+        },
+        "properties": {
+            "custom": [],
+            "passthrough": []
+        },
+        "widgets": {
+            "expose": [],
+            "passthrough": []
+        }
+    },
+    "namespace": "com.hcl.mario",
+    "version": "1.0.0"
+}

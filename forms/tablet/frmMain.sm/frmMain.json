@@ -34,7 +34,9 @@
     "canUpdateUI": true,
     "canvasWidth": 1200,
     "children": [
-        "dragArea"
+        "dragArea",
+        "cmpHallOfFame",
+        "cmpEnterHallOfFame"
     ],
     "containerweight": 100,
     "controllerInfo": {

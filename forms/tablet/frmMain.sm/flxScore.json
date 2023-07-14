@@ -39,8 +39,9 @@
         "value": "50%"
     },
     "children": [
-        "lblScore",
-        "lblRefresh"
+        "lblBestScore",
+        "lblRefresh",
+        "lblCup"
     ],
     "clipbounds": false,
     "containerweight": 100,

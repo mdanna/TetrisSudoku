@@ -1,5 +1,4 @@
 const mainController = {
-  release: '1.0.17',
   test: false,
 
   onViewCreated(){
@@ -35,18 +34,58 @@ const mainController = {
       this.dnd.addTargetArea(this.view.board);
       this.setBoardBackground();   
 
-      this.view.lblRefresh.onTouchEnd = () => {
+      this.view.flxRefresh.onClick = () => {
         voltmx.ui.Alert(`Start a new game?`, (value) => {
           value && this.startNewGame();
         }, constants.ALERT_TYPE_CONFIRMATION, 'Yes', 'No', 'Start new game', {});
       };
-      this.view.lblFooterLeft.text = `TetrisSudoku rel. ${mainController.release}`;
+      
+      this.view.flxCup.onClick = () => {
+        globals.offlineMode || this.view.cmpHallOfFame.show();
+      };
+
+      this.view.lblBestScore.text = `Your best score: ${voltmx.store.getItem('record') || 0}`;
+    
+      this.view.cmpEnterHallOfFame.onRegister = ({name, score}) => {
+        voltmx.application.showLoadingScreen(null, '', constants.LOADING_SCREEN_POSITION_FULL_SCREEN, true, true, {});
+        voltmx.store.setItem('userName', name);
+        const previousEntry = globals.hallOfFame.find((record) => record.name === name);
+        
+        const callback = () => {
+          hallOfFame.fetch().then((records) => {
+            voltmx.application.dismissLoadingScreen();
+            globals.records = records;
+          }).catch((errmsg) => {
+            voltmx.application.dismissLoadingScreen();
+            alert(errmsg);
+          });
+        };
+        
+        if(previousEntry){
+          hallOfFame.update({id: previousEntry.id, score}).then(() => {
+            callback();
+          }).catch((errmsg) => {
+            voltmx.application.dismissLoadingScreen();
+            alert(errmsg);
+          });
+        } else {
+          hallOfFame.create({name, score}).then(() => {
+            callback();
+          }).catch((errmsg) => {
+            voltmx.application.dismissLoadingScreen();
+            alert(errmsg);
+          });
+        }
+      };
     };
 
     this.view.preShow = () => {
       this.view.enableScrolling = false;
       this.view.bounces = false;
       this.view.allowVerticalBounce = false;
+            
+      this.view.lblCup.skin = globals.offlineMode ? 'skinLblIconDisabled' : 'skinLblIcon';
+
     };
 
     this.view.postShow = () => {
@@ -64,6 +103,7 @@ const mainController = {
 
   endCallback(draggedObject){
     this.dnd.getSourceObject().isVisible = true;
+    draggedObject.parent.remove(draggedObject);
   },
 
   getCoordsInDropArea(dropArea, xInDragArea, yInDragArea){
@@ -107,6 +147,8 @@ const mainController = {
       this.dnd.getSourceObject().isVisible = true;
       this.setBoardBackground();
     }
+
+    draggedObject.parent.remove(draggedObject);
   },
 
   getClosestIndex(t){
@@ -237,7 +279,7 @@ const mainController = {
       this.dnd.makeDraggable(shape, shape.getDragClone());
     });
   },
-  
+
   testDraw(){
     this.view.deck.removeAll();
     const shape2x2a = new com.hcl.mario.Shape2x2({id: `shape2x2_${new Date().getTime()}`},{},{});
@@ -367,6 +409,24 @@ const mainController = {
     this.draw();
   },
 
+  endGameOld(){
+    const timerId = 'endGameTimer' + new Date().getTime();
+    voltmx.timer.schedule(timerId, () => {
+      const record = voltmx.store.getItem('record') || '0';
+      let congrats = '';
+      if(this.score > parseInt(record)){
+        congrats = 'CONGRATULATIONS, you achieved a new record!!!\n';
+        voltmx.store.setItem('record', `${this.score}`);
+        this.view.lblBestScore.text = `Your best score: ${this.score}`;
+      }
+      voltmx.timer.cancel(timerId);
+      voltmx.ui.Alert(`Game over.\nYour score is ${this.score}.\n${congrats}Do you want to play again?`, (value) => {
+        value && this.startNewGame();
+        value || (this.dnd.suspendEvents(true));
+      }, constants.ALERT_TYPE_CONFIRMATION, 'Yes', 'No', 'Game over', {});
+    }, 0.3, false);
+  },
+  
   endGame(){
     const timerId = 'endGameTimer' + new Date().getTime();
     voltmx.timer.schedule(timerId, () => {
@@ -375,12 +435,22 @@ const mainController = {
       if(this.score > parseInt(record)){
         congrats = 'CONGRATULATIONS, you achieved a new record!!!\n';
         voltmx.store.setItem('record', `${this.score}`);
+        this.view.lblBestScore.text = `Your best score: ${this.score}`;
+        if(globals.offlineMode){
+          voltmx.ui.Alert(`Game over.\nYour score is ${this.score}.\n${congrats}Do you want to play again?`, (value) => {
+            value && this.startNewGame();
+            value || (this.dnd.suspendEvents(true));
+          }, constants.ALERT_TYPE_CONFIRMATION, 'Yes', 'No', 'Game over', {});
+        } else {
+          this.view.cmpEnterHallOfFame.show(this.score);
+        }
+      } else {
+        voltmx.ui.Alert(`Game over.\nYour score is ${this.score}.\n${congrats}Do you want to play again?`, (value) => {
+          value && this.startNewGame();
+          value || (this.dnd.suspendEvents(true));
+        }, constants.ALERT_TYPE_CONFIRMATION, 'Yes', 'No', 'Game over', {});
       }
       voltmx.timer.cancel(timerId);
-      voltmx.ui.Alert(`Game over.\nYour score is ${this.score}.\n${congrats}Do you want to play again?`, (value) => {
-        value && this.startNewGame();
-        value || (this.dnd.suspendEvents(true));
-      }, constants.ALERT_TYPE_CONFIRMATION, 'Yes', 'No', 'Game over', {});
     }, 0.3, false);
-  }  
+  } 
 };

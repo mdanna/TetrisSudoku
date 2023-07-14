@@ -1,1 +1,9 @@
-{}
+{
+    "TetrisSudokuObjectService_HallOfFame": {
+        "servicename": "TetrisSudokuObjectService",
+        "serviceid": "66d421cb-6f14-4fc2-80ab-80b50f33c383",
+        "type": "objectsvcs",
+        "objectname": "HallOfFame",
+        "objectid": "303576"
+    }
+}

@@ -1,0 +1,454 @@
+{
+    "@class": "com.kony.gen.viz.model.container.KVizSegment2",
+    "DNDConfig": null,
+    "_bottom_": {
+        "type": "number",
+        "value": "20"
+    },
+    "_bounces_": false,
+    "_data_": [
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+    ],
+    "_height_": {
+        "type": "string",
+        "value": "300dp"
+    },
+    "_indicator_": "none",
+    "_left_": {
+        "type": "string",
+        "value": "74dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 2,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_top_": {
+        "type": "string",
+        "value": "60dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "280dp"
+    },
+    "alternaterowskin": "s629db648e304194aee9046efb63f3f2",
+    "autogrowmode": 0,
+    "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50%"
+    },
+    "containerweight": 100,
+    "counter": "00",
+    "desktop": {
+        "_data_": [
+            {
+                "lblIndex": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "1"
+                },
+                "lblName": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Pippo Molinari"
+                },
+                "lblScore": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "12346"
+                }
+            }
+        ],
+        "rowTemplateId": "a149925fba4d45698c83789cc36b009b",
+        "rowtemplate": "Flex0gdc97ec2f7ab46",
+        "widgetdatamap": {
+            "flxHallOfFame": "flxHallOfFame",
+            "lblIndex": "lblIndex",
+            "lblName": "lblName",
+            "lblScore": "lblScore"
+        }
+    },
+    "focusedindex": null,
+    "focuseditem": null,
+    "groupcells": false,
+    "hasSections": false,
+    "id": "segHallOfFame",
+    "info": null,
+    "ipad": {
+        "psp": {
+            "indicator": "rowselect"
+        }
+    },
+    "iphone": {
+        "psp": {
+            "bounces": false,
+            "indicator": "none",
+            "showProgressIndicator": false
+        }
+    },
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "aa3e9f98c64f433ea687433547e2588a",
+    "masterdata": {},
+    "mobile": {
+        "_data_": [
+            {
+                "lblIndex": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "1"
+                },
+                "lblName": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Pippo Molinari"
+                },
+                "lblScore": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "12435"
+                }
+            },
+            {
+                "lblIndex": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "1"
+                },
+                "lblName": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Pippo Molinari"
+                },
+                "lblScore": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "12435"
+                }
+            },
+            {
+                "lblIndex": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "1"
+                },
+                "lblName": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Pippo Molinari"
+                },
+                "lblScore": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "12435"
+                }
+            },
+            {
+                "lblIndex": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "1"
+                },
+                "lblName": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Pippo Molinari"
+                },
+                "lblScore": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "12435"
+                }
+            },
+            {
+                "lblIndex": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "1"
+                },
+                "lblName": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Pippo Molinari"
+                },
+                "lblScore": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "12435"
+                }
+            },
+            {
+                "lblIndex": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "1"
+                },
+                "lblName": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Pippo Molinari"
+                },
+                "lblScore": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "12435"
+                }
+            },
+            {
+                "lblIndex": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "1"
+                },
+                "lblName": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Pippo Molinari"
+                },
+                "lblScore": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "12435"
+                }
+            },
+            {
+                "lblIndex": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "1"
+                },
+                "lblName": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Pippo Molinari"
+                },
+                "lblScore": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "12435"
+                }
+            },
+            {
+                "lblIndex": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "1"
+                },
+                "lblName": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Pippo Molinari"
+                },
+                "lblScore": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "12435"
+                }
+            },
+            {
+                "lblIndex": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "1"
+                },
+                "lblName": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Pippo Molinari"
+                },
+                "lblScore": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "12435"
+                }
+            }
+        ],
+        "rowTemplateId": "i09282c0b53844f2a860b839d504639c",
+        "rowtemplate": "CopyflxHallOfFame0bb23602045c745",
+        "widgetdatamap": {
+            "CopyflxHallOfFame0bb23602045c745": "CopyflxHallOfFame0bb23602045c745",
+            "lblIndex": "lblIndex",
+            "lblName": "lblName",
+            "lblScore": "lblScore"
+        }
+    },
+    "name": "kony.ui.SegmentedUI2",
+    "needpageindicator": true,
+    "pageoffdotimage": "pageoffdot.png",
+    "pageondotimage": "pageondot.png",
+    "paginationconfig": {
+        "position": "bottom"
+    },
+    "parent": "flxContent",
+    "pf": "userwidgetmodel",
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "retainselection": false,
+    "rowcounter": 0,
+    "rowfocusskin": "se7ac5895a104601928c6739d50ae864",
+    "rowskin": "sa78307512d1497a9b75e1bd6f6ece17",
+    "rowtemplate": null,
+    "screenlevelwidget": false,
+    "seccounter": 0,
+    "sectionheaderskin": "se6d73ac61734352a065a4684a08eab9",
+    "selectedRows": null,
+    "selectedState": false,
+    "selectedindex": null,
+    "selectedindices": null,
+    "selecteditems": null,
+    "selectedsectionindex": 0,
+    "selectionbehavior": "default",
+    "separatorcolor": "aaaaaa00",
+    "separatorrequired": false,
+    "separatorthickness": 1,
+    "showprogressindicator": false,
+    "showscrollbars": false,
+    "tablet": {
+        "_data_": [
+            {
+                "lblIndex": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "1"
+                },
+                "lblName": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Pippo Molinari"
+                },
+                "lblScore": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "12435"
+                }
+            },
+            {
+                "lblIndex": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "1"
+                },
+                "lblName": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Pippo Molinari"
+                },
+                "lblScore": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "12435"
+                }
+            },
+            {
+                "lblIndex": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "1"
+                },
+                "lblName": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Pippo Molinari"
+                },
+                "lblScore": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "12435"
+                }
+            },
+            {
+                "lblIndex": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "1"
+                },
+                "lblName": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Pippo Molinari"
+                },
+                "lblScore": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "12435"
+                }
+            },
+            {
+                "lblIndex": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "1"
+                },
+                "lblName": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Pippo Molinari"
+                },
+                "lblScore": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "12435"
+                }
+            },
+            {
+                "lblIndex": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "1"
+                },
+                "lblName": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Pippo Molinari"
+                },
+                "lblScore": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "12435"
+                }
+            },
+            {
+                "lblIndex": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "1"
+                },
+                "lblName": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Pippo Molinari"
+                },
+                "lblScore": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "12435"
+                }
+            },
+            {
+                "lblIndex": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "1"
+                },
+                "lblName": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Pippo Molinari"
+                },
+                "lblScore": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "12435"
+                }
+            },
+            {
+                "lblIndex": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "1"
+                },
+                "lblName": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Pippo Molinari"
+                },
+                "lblScore": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "12435"
+                }
+            },
+            {
+                "lblIndex": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "1"
+                },
+                "lblName": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Pippo Molinari"
+                },
+                "lblScore": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "12435"
+                }
+            }
+        ],
+        "rowTemplateId": "a1cc9afaf34f4bbcb720cd95180b2361",
+        "rowtemplate": "CopyflxHallOfFame0d742d355a17f48",
+        "widgetdatamap": {
+            "CopyflxHallOfFame0d742d355a17f48": "CopyflxHallOfFame0d742d355a17f48",
+            "lblIndex": "lblIndex",
+            "lblName": "lblName",
+            "lblScore": "lblScore"
+        }
+    },
+    "viewtype": "tableview",
+    "vizProps": {},
+    "wType": "Segment",
+    "widgetalignment": 5,
+    "widgetdatamap": {
+        "CopyflxHallOfFame0d742d355a17f48": "CopyflxHallOfFame0d742d355a17f48",
+        "lblIndex": "lblIndex",
+        "lblName": "lblName",
+        "lblScore": "lblScore"
+    },
+    "zindex": 1
+}

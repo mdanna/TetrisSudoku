@@ -15,7 +15,12 @@
         0
     ],
     "_percent_": true,
-    "_skin_": "s6cd7bb5fde94300b4efc732d1186283",
+    "_pxMenuIndex": [
+        2,
+        1,
+        0
+    ],
+    "_skin_": "s1b07a181f464ba895e2194439ba900c",
     "_title_": null,
     "addWidgetsdone": false,
     "allboxes": [],
@@ -45,8 +50,9 @@
     "canUpdateUI": true,
     "canvasWidth": 1200,
     "children": [
-        "lblHiddenCustomCSS",
-        "dragArea"
+        "dragArea",
+        "cmpHallOfFame",
+        "cmpEnterHallOfFame"
     ],
     "containerweight": 100,
     "controllerInfo": {
@@ -56,8 +62,8 @@
         }
     },
     "currentBreakpoint": {
-        "kuid": "b2",
-        "width": 1024
+        "kuid": "b3",
+        "width": 640
     },
     "currentLocale": "default",
     "desktopweb": {

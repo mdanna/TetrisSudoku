@@ -35,8 +35,7 @@
     "autogrowmode": 0,
     "canUpdateUI": true,
     "children": [
-        "lblFooterLeft",
-        "lblFooterRight"
+        "lblPoweredBy"
     ],
     "clipbounds": false,
     "containerweight": 100,
@@ -45,7 +44,7 @@
     "info": null,
     "iscustomlayout": false,
     "isvisible": true,
-    "kuid": "d2d36de2c7f24923bcad9fdd3ba9ecc6",
+    "kuid": "ia895ea03c7e48dda4900b4e779b338c",
     "layouttype": 2,
     "name": "kony.ui.FlexContainer",
     "parent": "dragArea",

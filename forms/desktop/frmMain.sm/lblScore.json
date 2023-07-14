@@ -65,7 +65,7 @@
     "isvisible": true,
     "kuid": "d0fbdd6cb6304612942e0c07b0bfbeb1",
     "name": "kony.ui.Label",
-    "parent": "flxScore",
+    "parent": "flxGameScore",
     "pf": "frmMain",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,
